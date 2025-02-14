@@ -43,6 +43,14 @@ main();
 - Georgian (ka)
 - Norwegian (no)
 
+## Links
+[Try online](https://github.com/liveweeeb13/wordwhize-demo/settings/pages)
+[Help for error](https://github.com/liveweeeb13/WordWhize/blob/main/README.md)
+[Developer discord](https://discordlookup.com/user/790240841598763018)
+
+
 
 ## License
 This project is licensed under ISC.
+
+
