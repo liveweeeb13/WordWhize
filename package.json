@@ -1,6 +1,6 @@
 {
   "name": "wordwhize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A random word generator with support for multiple languages.",
   "main": "index.js",
   "scripts": {
