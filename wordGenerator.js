@@ -10,9 +10,20 @@ class WordGenerator {
     }
 
     this.languages = {
-      en: "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt",
-      fr: "https://raw.githubusercontent.com/words/an-array-of-french-words/master/index.json",
+      en: "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt", // English
+      fr: "https://raw.githubusercontent.com/words/an-array-of-french-words/master/index.json", // French
+      es: "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/Wordlist%20Spanish.txt", // Spanish
+      it: "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/WordList_ItalianAbc%20rommmcek.txt", // Italian
+      ro: "https://raw.githubusercontent.com/ManiacDC/TypingAid/refs/heads/master/Wordlists/Wordlist%20Romanian.txt", // Romanian
+      ar: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/arabic.txt", // Arabic
+      hr: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/croatian.txt", // Croatian
+      cs: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/czech.txt", // Czech
+      da: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/danish.txt", // Danish
+      nl: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/dutch.txt", // Dutch
+      ka: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/georgian.txt", // Georgian
+      no: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/norwegian.txt" // Norwegian
     };
+    
 
     this.wordLists = {};
   }

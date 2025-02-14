@@ -32,6 +32,17 @@ main();
 ## Supported Languages
 - French (fr)
 - English (en)
+- Spanish (es)
+- Italian (it)
+- Romanian (ro)
+- Arabic (ar)
+- Croatian (hr)
+- Czech (cs)
+- Danish (da)
+- Dutch (nl)
+- Georgian (ka)
+- Norwegian (no)
+
 
 ## License
 This project is licensed under ISC.
