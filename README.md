@@ -1,4 +1,4 @@
-# WordWhize
+![g](https://liveweeeb13.github.io/wordwhize-demo/assets/wwwbanner.png)
 
 WordWhize is a random word generator supporting multiple languages. It allows you to generate words of a specified length.
 
