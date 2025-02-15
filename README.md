@@ -1,4 +1,4 @@
-# WordWhize
+# WordWhize v1.0.5
 
 WordWhize is a random word generator supporting multiple languages. It allows you to generate words of a specified length.
 
@@ -10,8 +10,11 @@ To install the module, use npm:
 npm install wordwhize
 ```
 
+Here's a polished and well-formatted version in English:
+
 ## Usage
 
+**In JavaScript:**
 Here’s how to use it in your JavaScript code:
 
 ```javascript
@@ -23,6 +26,18 @@ async function main() {
 }
 main()
 ```
+
+**Command-line usage:**
+To use it from the terminal, provide the word length and language as arguments:
+
+```bash
+npx wordwhize 7 en
+```
+
+This will generate a 7-letter word in English. 
+
+**Note:**
+- You can customize the language code (e.g., `"en"` for English, `"fr"` for French) as needed.
 
 ## Supported Languages
 - French (fr)

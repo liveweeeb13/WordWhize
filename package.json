@@ -4,7 +4,7 @@
   "description": "A random word generator with support for multiple languages.",
   "main": "index.js",
   "bin": {
-    "wordgenerator": "wordgenerator.js"
+    "wordwhize": "command.js"
   },
   "author": "liveweeeb",
   "license": "ISC",
