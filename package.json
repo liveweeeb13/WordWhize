@@ -8,9 +8,6 @@
   },
   "author": "liveweeeb",
   "license": "ISC",
-  "dependencies": {
-    "chmod": "^0.2.1"
-  },
   "keywords": [
     "word",
     "generator",
