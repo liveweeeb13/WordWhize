@@ -10,8 +10,6 @@ To install the module, use npm:
 npm install wordwhize
 ```
 
-Here's a polished and well-formatted version in English:
-
 ## Usage
 
 **In JavaScript:**
