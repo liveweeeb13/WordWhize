@@ -35,9 +35,9 @@ This will generate a 7-letter word in English.
 
 You can also use the following options:
 
-`--list` to display available languages.
-`--support` or `--s` to show help with support links.
-`--random` to generate a word of random length between 1 and 20 characters.
+`--list` to display available languages.      
+`--support` or `--s` to show help with support links.      
+`--random` to generate a word of random length between 1 and 20 characters.      
 **For example:**
 
 ```bash
