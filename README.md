@@ -15,7 +15,7 @@ npm install wordwhize
 Here’s how to use it in your JavaScript code:
 
 ```javascript
-const wordGenerator = require("./index");
+const wordGenerator = require("wordwhize");
 
 async function main() {
   let word = await wordGenerator(5, "fr"); // Generate a 5-letter word in French

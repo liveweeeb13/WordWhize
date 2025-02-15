@@ -1,14 +1,16 @@
 {
   "name": "wordwhize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A random word generator with support for multiple languages.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "wordgenerator": "wordgenerator.js"
   },
-  "author": "",
+  "author": "liveweeeb",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "chmod": "^0.2.1"
+  },
   "keywords": [
     "word",
     "generator",

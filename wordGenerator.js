@@ -99,3 +99,5 @@ async function wordGenerator(length, lang = "en") {
 }
 
 module.exports = wordGenerator;
+
+
