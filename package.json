@@ -1,10 +1,10 @@
 {
   "name": "wordwhize",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "A random word generator with support for multiple languages.",
   "main": "index.js",
   "bin": {
-    "wordwhize": "command.js"
+    "wordwhize": "cli.js"
   },
   "author": "liveweeeb",
   "license": "ISC",

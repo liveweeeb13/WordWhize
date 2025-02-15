@@ -1,4 +1,4 @@
-# WordWhize v1.0.5
+# WordWhize v1.0.6
 
 WordWhize is a random word generator supporting multiple languages. It allows you to generate words of a specified length.
 
@@ -33,11 +33,23 @@ To use it from the terminal, provide the word length and language as arguments:
 ```bash
 npx wordwhize 7 en
 ```
+This will generate a 7-letter word in English.
 
-This will generate a 7-letter word in English. 
+You can also use the following options:
+
+`--list` to display available languages.
+`--support` or `--s` to show help with support links.
+`--random` to generate a word of random length between 1 and 20 characters.
+**For example:**
+
+```bash
+npx wordwhize --random en
+```
+This will generate a random-length word in English.
 
 **Note:**
-- You can customize the language code (e.g., `"en"` for English, `"fr"` for French) as needed.
+
+You can customize the language code (e.g., "en" for English, "fr" for French) as needed.
 
 ## Supported Languages
 - French (fr)
@@ -52,6 +64,11 @@ This will generate a 7-letter word in English.
 - Dutch (nl)
 - Georgian (ka)
 - Norwegian (no)
+- Polish (pl)
+- Japanese (ja)
+- Turkish (tr)
+- Russian (ru)
+
 
 ## Links
 [Try online](https://github.com/liveweeeb13/wordwhize-demo/settings/pages) | [Help for error](https://github.com/liveweeeb13/WordWhize/blob/main/README.md) | [Developer discord](https://discordlookup.com/user/790240841598763018)

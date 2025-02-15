@@ -9,19 +9,25 @@ if (!fs.existsSync(cacheDir)) {
 }
 
 const languages = {
-  en: "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt",
-  fr: "https://raw.githubusercontent.com/words/an-array-of-french-words/master/index.json",
-  es: "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/Wordlist%20Spanish.txt",
-  it: "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/WordList_ItalianAbc%20rommmcek.txt",
-  ro: "https://raw.githubusercontent.com/ManiacDC/TypingAid/refs/heads/master/Wordlists/Wordlist%20Romanian.txt",
-  ar: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/arabic.txt",
-  hr: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/croatian.txt",
-  cs: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/czech.txt",
-  da: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/danish.txt",
-  nl: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/dutch.txt",
-  ka: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/georgian.txt",
-  no: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/norwegian.txt"
+  en: "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt", // English
+  fr: "https://raw.githubusercontent.com/words/an-array-of-french-words/master/index.json", // French
+  es: "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/Wordlist%20Spanish.txt", // Spanish
+  it: "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/WordList_ItalianAbc%20rommmcek.txt", // Italian
+  ro: "https://raw.githubusercontent.com/ManiacDC/TypingAid/refs/heads/master/Wordlists/Wordlist%20Romanian.txt", // Romanian
+  ar: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/arabic.txt", // Arabic
+  hr: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/croatian.txt", // Croatian
+  cs: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/czech.txt", // Czech
+  da: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/danish.txt", // Danish
+  nl: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/dutch.txt", // Dutch
+  ka: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/georgian.txt", // Georgian
+  no: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/norwegian.txt", // Norwegian
+  pl: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/refs/heads/main/wordlists/languages/polish.txt", // Polish
+  de: "https://raw.githubusercontent.com/kkrypt0nn/wordlists/refs/heads/main/wordlists/languages/german.txt", // German
+  ja: "https://raw.githubusercontent.com/hingston/japanese/refs/heads/master/44998-japanese-words.txt", // Japanese
+  tr: "https://raw.githubusercontent.com/mertemin/turkish-word-list/refs/heads/master/words.txt", // Turkish
+  ru: "https://raw.githubusercontent.com/hingston/russian/refs/heads/master/100000-russian-words.txt" // Russian
 };
+
 
 // Object to store loaded word lists to avoid repeated downloads
 const wordLists = {};
@@ -56,7 +62,6 @@ async function fetchWordList(lang) {
       if (res.statusCode !== 200) {
         return reject(new Error(`Error ${res.statusCode} while downloading words (Code: 103)`));
       }
-
       let data = "";
       res.on("data", (chunk) => (data += chunk)); // Retrieve data in chunks
       res.on("end", () => {
@@ -98,6 +103,5 @@ async function wordGenerator(length, lang = "en") {
   }
 }
 
-module.exports = wordGenerator;
-
+module.exports = { wordGenerator, languages };
 
