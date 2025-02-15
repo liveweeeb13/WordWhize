@@ -1,0 +1,19 @@
+{
+    "en": "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt", 
+    "fr": "https://raw.githubusercontent.com/words/an-array-of-french-words/master/index.json",
+    "es": "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/Wordlist%20Spanish.txt",
+    "it": "https://raw.githubusercontent.com/ManiacDC/TypingAid/master/Wordlists/WordList_ItalianAbc%20rommmcek.txt", 
+    "ro": "https://raw.githubusercontent.com/ManiacDC/TypingAid/refs/heads/master/Wordlists/Wordlist%20Romanian.txt", 
+    "ar": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/arabic.txt",
+    "hr": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/croatian.txt", 
+    "cs": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/czech.txt", 
+    "da": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/danish.txt",
+    "nl": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/dutch.txt", 
+    "ka": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/georgian.txt", 
+    "no": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/main/wordlists/languages/norwegian.txt", 
+    "pl": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/refs/heads/main/wordlists/languages/polish.txt",
+    "de": "https://raw.githubusercontent.com/kkrypt0nn/wordlists/refs/heads/main/wordlists/languages/german.txt", 
+    "ja": "https://raw.githubusercontent.com/hingston/japanese/refs/heads/master/44998-japanese-words.txt", 
+    "tr": "https://raw.githubusercontent.com/mertemin/turkish-word-list/refs/heads/master/words.txt", 
+    "ru": "https://raw.githubusercontent.com/hingston/russian/refs/heads/master/100000-russian-words.txt" 
+}

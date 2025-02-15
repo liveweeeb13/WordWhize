@@ -25,3 +25,17 @@ Here is a list of the error codes used in the code and their meanings:
 6. **Code: 105**  
    - **Error:** `Error: {message}`  
    - **Meaning:** A general error occurred during execution. This code covers various errors related to network connection, data processing, or internal issues.
+
+7. **Code: 106**  
+   - **Error:** `Error parsing data for {lang}: {message}`  
+   - **Meaning:** A specific error occurred while parsing data for the specified language. This may indicate issues with processing the downloaded data (e.g., an unexpected format in the file or a coding problem).
+
+So, if an error of type 106 occurs, you'll know it relates to a specific problem with parsing the data for the affected language.
+
+
+For more info : 
+```bash
+npx wordwhize --support
+```
+
+And click on support discord

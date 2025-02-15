@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
-const { wordGenerator, languages } = require('./wordgenerator');
+const wordGenerator = require('./wordGenerator.js');
+const languages = require('./langs.json');
 
 // args
 const args = process.argv.slice(2);
 const lengthArg = args[0];
 const lang = args[1] || 'en';
 
-// Support or Help Command
+// Support or Help commands
 const helpArgs = ["?", "--?", "-?", "help", "--help", "-h"];
 if (!lengthArg || helpArgs.includes(lengthArg)) {
   return sendHelp();
@@ -55,14 +56,14 @@ async function generateWord() {
 
 generateWord();
 
-// List Available Languages
+// List available Languages
 function listLanguages() {
   console.log("🌍 Available languages:");
   Object.keys(languages).forEach(lang => console.log(`- ${lang}`));
   process.exit(0);
 }
 
-// Show Help & Support Information
+// Show Help and Support Information
 function showSupportInfo() {
   console.log(`
   \x1b[34m📖 Need Help?\x1b[0m
@@ -80,7 +81,7 @@ function showSupportInfo() {
 // Send Help Information
 function sendHelp() {
   console.log(`
-  \x1b[34m📖 WordWhize - Command List\x1b[0m
+  \x1b[34m📖 WordWhize - Command list\x1b[0m
   \x1b[90m──────────────────────────────────────────\x1b[0m
   
   \x1b[32m📜 Generate a word:\x1b[0m
@@ -91,12 +92,10 @@ function sendHelp() {
     \x1b[36mnpx wordwhize --random [language]\x1b[0m
     → Generates a word with a random length between 1 and 20
   
-  \x1b[35m🌍 List available languages:\x1b[0m
-    \x1b[36mnpx wordwhize --list\x1b[0m
-  
   \x1b[31m⚠️ Help & Support:\x1b[0m
-    \x1b[36mnpx wordwhize --help\x1b[0m → Shows this help message
-    \x1b[36mnpx wordwhize --support\x1b[0m → Lists supported languages
+    \x1b[36mnpx wordwhize --help\x1b[0m → Displays this help message
+    \x1b[36mnpx wordwhize --list\x1b[0m → List available languages
+    \x1b[36mnpx wordwhize --support\x1b[0m → Shows the package's links
     \x1b[36m🔗 GitHub:\x1b[0m  \x1b[4;34mhttps://github.com/liveweeeb13/WordWhize\x1b[0m
     \x1b[36m💬 Discord:\x1b[0m \x1b[4;34mhttps://discord.gg/rm7fqE9Taz\x1b[0m
 
