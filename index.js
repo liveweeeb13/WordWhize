@@ -1,3 +1,3 @@
-const WordGenerator = require("./wordGenerator");
+const wordGenerator = require("./wordGenerator");
 
-module.exports = new WordGenerator;
+module.exports = wordGenerator;

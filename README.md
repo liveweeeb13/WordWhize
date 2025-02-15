@@ -15,18 +15,13 @@ npm install wordwhize
 Here’s how to use it in your JavaScript code:
 
 ```javascript
-const wordgenerator = require("wordwhize");
+const wordGenerator = require("./index");
 
 async function main() {
-  try {
-    const word = await wordgenerator.gen(5, "fr"); // Generate a 5-letter word in French
-    console.log(word);
-  } catch (error) {
-    console.error("Error:", error.message);
-  }
+  let word = await wordGenerator(5, "fr"); // Generate a 5-letter word in French
+  console.log(word);
 }
-
-main();
+main()
 ```
 
 ## Supported Languages
@@ -44,11 +39,7 @@ main();
 - Norwegian (no)
 
 ## Links
-[Try online](https://github.com/liveweeeb13/wordwhize-demo/settings/pages)
-[Help for error](https://github.com/liveweeeb13/WordWhize/blob/main/README.md)
-[Developer discord](https://discordlookup.com/user/790240841598763018)
-
-
+[Try online](https://github.com/liveweeeb13/wordwhize-demo/settings/pages) | [Help for error](https://github.com/liveweeeb13/WordWhize/blob/main/README.md) | [Developer discord](https://discordlookup.com/user/790240841598763018)
 
 ## License
 This project is licensed under ISC.

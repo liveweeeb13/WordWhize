@@ -1,13 +1,7 @@
-const wordgenerator = require("./wordGenerator");
+const wordGenerator = require("./index");
 
 async function main() {
-  const generator = new wordgenerator();
-  try {
-    const result = await generator.gen(5, "no");
-    console.log(result);
-  } catch (error) {
-    console.error("Erreur:", error.message);
-  }
+  let word = await wordGenerator(5, "no")
+  console.log(word);
 }
-
-main();
+main()
